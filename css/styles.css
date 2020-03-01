@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Cinzel;
+}
+p{
+	font-size: 0.9rem;
+	line-height: 1.5;
+	font-weight: 400;
+	color: #333333;
+}
+
+.header{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(153, 153, 153,0.3),rgb(153, 153, 153,0.3)), url("images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	clip-path: polygon(100% 0%,100% 75%, 50% 100%,0% 75%,0 0);
+}
+.header:before{
+	content: "";
+	position: absolute;
+	top:0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	opacity: .2%;
+	z-index: -1;
+	background:linear-gradient(to right, #8c8c8c 0%,#808080 0%,#737373 0%);
+}
+.navbar:before{
+	content: "";
+	top:0;
+	bottom:0;
+	left: 0;
+	right: 0;
+	opacity: .2%;
+	z-index: -1;
+	background:linear-gradient(to right, #8c8c8c 0%, #808080 0%, #737373 0%);
+}
+.nav-item a{
+	font-weight: bold;
+	color: #333333 !important;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+a:hover{
+	text-decoration: none;
+
+}
+.header-section{
+	width: 100%;
+	height: inherit;
+	color: #333333;
+	text-align: center;
+	position: relative;
+}
+.center-div{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 30%;
+	left: 50;	
+}
+.header-buttons a{
+	border: 1px solid black;
+	border-radius: 100px;
+	margin: 0 5px;
+	padding: 12px,35px;
+	outline: none;
+	color: #333333;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.5;
+	text-align: center;
+}
+.header-buttons a:hover{
+	color: #f2f2f2;
+	background-color: #333333;
+	text-decoration: none;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+.center-div p{
+	font-size: 1.2rem;
+	padding: 10px 0 20px 0;
+	color: #333333;
+}
